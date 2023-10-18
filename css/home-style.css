@@ -121,3 +121,17 @@ li a:hover {
     margin: 20px;
     padding: 5px;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #F4F4F4;
+    color: white;
+}
+
+img {
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

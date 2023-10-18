@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>PHP Test</title>
-    <link rel="stylesheet" href="./css/home-style.css">
+    <link rel="stylesheet" href="./css/home-style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="navbar">
@@ -49,6 +49,16 @@
                 <a href="login.php" class="button">Login</a>
             </div>
         </div>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <footer>
+            <img src="./assets/facebook.png" alt="facebook icon" width="30">
+            <img src="./assets/twitter.png" alt="twitter icon" width="30">
+             <img src="./assets/youtube.png" alt="youtube icon" width="30">
+            <img src="./assets/instagram.png" alt="instagram icon" width="30">
+        </footer>
     </div>
     <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right">      </script>
 </body>

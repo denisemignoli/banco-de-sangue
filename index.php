@@ -4,6 +4,14 @@
     <link rel="stylesheet" href="./css/home-style.css">
 </head>
 <body>
+    <div class="navbar">
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="requisitos.php">Requisitos de doação</a></li>
+      <li><a href="processo.php">Processo de doação</a></li>
+      <li><a href="hemocentros.php">Onde doar?</a></li>
+    </ul>
+    </div>
     <h1>Doação de Sangue</h1>
     <div class="container">
         <h2>Salve vidas, doe sangue!</h2>
@@ -22,14 +30,12 @@
         </div>
         <div class="requirements">
             <h3>Requisitos para Doar Sangue</h3>
-            <ul>
-                <li>Ter idade entre 16 e 69 anos (menores de 18 anos devem apresentar consentimento formal do responsável legal).</li>
-                <li>Pessoas com idade entre 60 e 69 anos só poderão doar sangue se já o tiverem feito antes dos 60 anos.</li>
-                <li>Apresentar documento de identificação com foto emitido por órgão oficial (Carteira de Identidade, Carteira Nacional de Habilitação, Carteira de Trabalho, Passaporte, Registro Nacional de Estrangeiro, Certificado de Reservista e Carteira Profissional emitida por classe). São aceitos documentos digitais com foto.</li>
-                <li>Pesar no mínimo 50 kg.</li>
-                <li>Ter dormido pelo menos 6 horas nas últimas 24 horas.</li>
-                <li>Estar alimentado. Evitar alimentos gordurosos nas 3 horas que antecedem a doação de sangue. Caso seja após o almoço, aguardar 2 horas.</li>
-            </ul>
+                <p>Ter idade entre 16 e 69 anos (menores de 18 anos devem apresentar consentimento formal do responsável legal).</p>
+                <p>Pessoas com idade entre 60 e 69 anos só poderão doar sangue se já o tiverem feito antes dos 60 anos.</p>
+                <p>Apresentar documento de identificação com foto emitido por órgão oficial (Carteira de Identidade, Carteira Nacional de Habilitação, Carteira de Trabalho, Passaporte, Registro Nacional de Estrangeiro, Certificado de Reservista e Carteira Profissional emitida por classe). São aceitos documentos digitais com foto.</p>
+                <p>Pesar no mínimo 50 kg.</p>
+                <p>Ter dormido pelo menos 6 horas nas últimas 24 horas.</p>
+                <p>Estar alimentado. Evitar alimentos gordurosos nas 3 horas que antecedem a doação de sangue. Caso seja após o almoço, aguardar 2 horas.</p>
         </div>
         <div class="div-container">
             <div class="div1">

@@ -12,12 +12,10 @@ padding: 20px;
 
 h1 {
 font-size: 36px;
-margin:40px;
+margin: 20px;
 }
 
 .container {
-margin: 20px;
-padding: 20px;
 background-color: #fff;
 border-radius: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -118,8 +116,6 @@ li a:hover {
 
 .navbar {
     text-align: left;
-    margin: 20px;
-    padding: 5px;
 }
 
 /* FOOTER */
@@ -134,4 +130,31 @@ img {
     margin-right: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/*cover photo*/
+container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.hero-image {
+  background-image: url(https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: #329a3e;
+  height: 50%;
+    width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    object-fit: contain;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
 }

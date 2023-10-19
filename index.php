@@ -5,16 +5,24 @@
 </head>
 <body>
     <div class="navbar">
-    <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="requisitos.php">Requisitos de doação</a></li>
-      <li><a href="processo.php">Processo de doação</a></li>
-      <li><a href="hemocentros.php">Onde doar?</a></li>
-    </ul>
+        <ul>
+          <li><a href="index.php" style="margin-left:40px">Home</a></li>
+          <li><a href="requisitos.php">Requisitos de doação</a></li>
+          <li><a href="processo.php">Processo de doação</a></li>
+          <li><a href="hemocentros.php">Onde doar?</a></li>
+        </ul>
     </div>
-    <h1>Doação de Sangue</h1>
+
     <div class="container">
-        <h2>Salve vidas, doe sangue!</h2>
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size:50px">Salve vidas, doe sangue!</h1>
+            <h2 style="margin-left:20px">Seja um doador</h2>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
         <div class="info">
             <p>
             A doação de sangue é um ato de amor que pode salvar vidas. Seja parte
@@ -28,6 +36,7 @@
               câncer, cirurgias, acidentes e outras situações de emergência.
             </p>
         </div>
+
         <div class="requirements">
             <h3>Requisitos para Doar Sangue</h3>
                 <p>Ter idade entre 16 e 69 anos (menores de 18 anos devem apresentar consentimento formal do responsável legal).</p>
@@ -37,6 +46,7 @@
                 <p>Ter dormido pelo menos 6 horas nas últimas 24 horas.</p>
                 <p>Estar alimentado. Evitar alimentos gordurosos nas 3 horas que antecedem a doação de sangue. Caso seja após o almoço, aguardar 2 horas.</p>
         </div>
+
         <div class="div-container">
             <div class="div1">
                 <h3>Cadastro de Doador</h3>

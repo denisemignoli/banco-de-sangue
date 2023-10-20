@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -155,6 +161,6 @@ container {
     position: absolute;
     top: 40%;
     left: 25%;
-    transform: translate(-55%, -55%);
+    transform: translate(-60%, -60%);
     color: #960000;
 }

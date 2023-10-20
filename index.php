@@ -16,8 +16,8 @@
     <div class="container">
         <div class="hero-image">
           <div class="hero-text">
-            <h1 style="font-size:50px">Salve vidas, doe sangue!</h1>
-            <h2 style="margin-left:20px">Seja um doador</h2>
+            <h1 style="font-size:45px">Salve vidas, doe sangue!</h1>
+            <h2 style="margin-left:0px">Seja um doador</h2>
           </div>
         </div>
     </div>

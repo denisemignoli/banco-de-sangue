@@ -52,7 +52,7 @@
 
         <div class="div-container">
             <div class="div1">
-                <h3>Cadastro de Doador</h3>
+                <h3>Cadastro de Doador FR</h3>
                 <p>Novo por aqui? Faça o seu cadastro.</p>
                 <a href="cadastro.php" class="button">Cadastrar</a>
             </div>

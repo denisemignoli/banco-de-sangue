@@ -33,7 +33,7 @@
             </p>
         </div>
         <div class="info">
-            <h3>Por que doar sangue?</h3>
+            <h3>Por QUE doar sangue?</h3>
             <p>
               A doação de sangue é essencial para pacientes em tratamento de
               câncer, cirurgias, acidentes e outras situações de emergência.

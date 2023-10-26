@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Doador</title>
-    <link rel="stylesheet" href="./css/cadastro-style.css">
+    <link rel="stylesheet" href="./css/cadastro-e-login-style.css">
 </head>
 <body>
     <div class="container">
@@ -18,8 +18,10 @@
                 <br>
             </form>
         </div>
-        <input name="Enviar" type="submit" class="button" id="enviar" value="Enviar">
-        <a href="index.php" class="button">Cancelar</a>
+        <div class="button-container">
+            <input name="Enviar" type="submit" class="button" id="enviar" value="Enviar">
+            <a href="index.php" class="button">Cancelar</a>
+        </div>
   </form>
 
 </div>

@@ -8,20 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="alignCenter">Login</h1>
+        <h1 class="alignCenter">Entrar</h1>
         <div class="alignLeft">
-            <form id="form1" name="form1" method="get" action="acaoLogin.php">
-                <label for="email">Email:</label>
-                <input name="email" type="email" id="email" placeholder="Digite seu email" required>
+            <form id="form1" name="form1" method="post" action="acaoLogin.php">
+                <label for="login">Login:</label>
+                <input name="login" type="text" id="login" placeholder="Digite seu login" required>
                 <label for="senha">Senha:</label>
                 <input name="senha" type="password" id="senha" placeholder="Digite sua senha" required>
-                <br>
+                <div class="button-container">
+                    <input name="Enviar" type="submit" class="button" id="enviar" value="Enviar">
+                    <a href="index.php" class="button">Cancelar</a>
+                </div>
             </form>
         </div>
-        <div class="button-container">
-            <input name="Enviar" type="submit" class="button" id="enviar" value="Enviar">
-            <a href="index.php" class="button">Cancelar</a>
-        </div>
+        
   </form>
 
 </div>

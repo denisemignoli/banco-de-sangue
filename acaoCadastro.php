@@ -22,8 +22,8 @@
         require_once 'conexaoBD.php';
         
         $sql = "INSERT INTO tb_pessoa (cpf, nome, email, login, senha) 
-        VALUES ('".$_POST['cpf']."', '".$_POST['nome']."', '".$_POST['email']."', '".$_POST['login']."','".$_POST['senha']."')";
-    
+        VALUES ('".$_POST['cpf']."', '".$_POST['nome']."', '".$_POST['email']."', '".$_POST['login']."','".$_POST['senha']."')";  
+  
         if ($conexao->query($sql) === TRUE) {
 
             echo '

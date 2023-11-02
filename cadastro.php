@@ -13,7 +13,17 @@
             <label for="nome">Nome:</label>
             <input name="nome" type="text" id="nome" placeholder="Digite seu nome" required>
             <label for="cpf">CPF:</label>
-            <input name="cpf" type="number" id="cpf" placeholder="Digite seu CPF" required>
+            <input name="cpf" type="text" id="cpf" placeholder="Digite seu CPF" required>
+                <script>
+                    function formatCPF() {
+                        const cpfInput = document.getElementById("cpf");
+                        const cpfValue = cpfInput.value.replace(/\D/g, '');
+                        const formattedCPF = cpfValue.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+                        cpfInput.value = formattedCPF;
+                    }
+                    const cpfInput = document.getElementById("cpf");
+                    cpfInput.addEventListener("input", formatCPF);
+                </script>
             <label for="email">Email:</label>
             <input name="email" type="email" id="email" placeholder="Digite seu email" required>
             <label for="login">Login:</label>

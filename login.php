@@ -21,9 +21,6 @@
                 </div>
             </form>
         </div>
-        
-  </form>
-
-</div>
+    </div>
 </body>
 </html>

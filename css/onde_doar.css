@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  text-align: left;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #960000;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #f4f4f4;
+  color: #960000;
+}
+
+/* Conteúdo principal */
+h2 {
+  color: #960000;
+}
+
+/* Div de cadastro/login */
+.div-container {
+  font-size: 0;
+  margin: 40px;
+}
+
+.div-container h2 {
+  color: #960000;
+}
+
+.div1,
+.div2 {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+span {
+  color: #960000;
+  font-weight: bold;
+}
+
+/* Lista */
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  list-style: circle;
+}
+
+li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #f4f4f4;
+  color: #960000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #f4f4f4;
+  color: white;
+}
+
+img {
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Cover photo */
+.hero-image {
+  background-image: url("../assets/drop.jpg");
+  background-color: #ffffff;
+  height: 50%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-60%, -60%);
+  color: #960000;
+}
+
+/* Botão */
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #960000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #e74c3c;
+}
+
+/* Parágrafo */
+p {
+  font-size: 18px;
+  margin: 5px 0;
+}

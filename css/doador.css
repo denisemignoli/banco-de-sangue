@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 60vh;
+}
+
+img {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.button {
+  background-color: #960000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f4f4f4;
+  color: #960000;
+  border: 1px solid #960000;
+}
+
+.navbar {
+  background-color: #960000;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #f4f4f4;
+  color: #960000;
+}
+
+.formVerificar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formVerificar h3 {
+  color: #960000;
+  margin-bottom: 20px;
+}
+
+.personal-info-texto h3 {
+  color: #960000;
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 15px;
+}
+
+.form-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.verificar-button {
+  margin-top: 20px;
+}
+
+.personal-info-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.column {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.tabela-historico {
+  width: 100%;
+}
+
+.image-and-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  margin-right: 20px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+}
+
+.button {
+  background-color: #960000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.info h3 {
+  margin-top: 0;
+}

@@ -13,30 +13,34 @@
     <?php
     session_start();
 
-    $login = $_POST['login'];
+    $cpf = $_POST['cpf'];
     $senha = $_POST['senha'];
 
     // Validações de preenchimento dos campos.
-    if (empty($login) || empty($senha)) {
-      echo "Os campos Login e Senha não podem estar em branco..<br>";
+    if (empty($cpf) || empty($senha)) {
+      echo "Os campos CPF e Senha não podem estar em branco..<br>";
       exit;
     };
 
     require_once 'conexaoBD.php';
 
-    $sql = "SELECT * FROM tb_pessoa WHERE login = '" . $login . "';";
+    $sql = "SELECT * FROM tb_pessoa WHERE cpf = '" . $cpf . "';";
     $resultado = $conexao->query($sql);
     $linha = mysqli_fetch_array($resultado);
 
     if ($linha != null) {
       if ($linha['senha'] == $senha) {
-        echo '
-            <div>
-            <a href="./principal.php">
-            <h1>Seja bem vindo(a)!</h1>
-            </a>
-            </div>          
-          ';
+        // Inicia a sessão
+        session_start();
+
+        // Armazena informações do usuário na sessão
+        $_SESSION['usuario_id'] = $linha['id_doador'];
+        $_SESSION['usuario_nome'] = $linha['nome'];
+        $_SESSION['cpf'] = $linha['cpf'];
+
+        // Redireciona para a página do doador
+        header('Location: doador.php');
+        exit();
       } else {
         echo '
           <div>

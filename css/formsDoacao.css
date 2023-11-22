@@ -5,6 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -27,8 +28,8 @@ body {
 }
 
 label {
-  display: block;
   font-weight: bold;
+  display: block;
   margin-top: 10px;
 }
 
@@ -85,4 +86,29 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.container.special {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.button-container.right {
+  text-align: right;
+}
+
+.button.secondary {
+  margin-left: 10px;
+}
+
+input[type="text"].disabled,
+input[type="date"].disabled,
+textarea.disabled {
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  pointer-events: none;
+  background-color: #eee;
 }

@@ -159,7 +159,7 @@
             echo '<td style="width: 15%">' . $row["ds_hemocentro"] . "</td>";
             echo '<td style="width: 30%">' . $row["ds_observacao"] . "</td>";
             echo '<td style="width: 10%"><a href="atualizarDoacao.php?id_doacao=' . $row['id_doacao'] . '&data_doacao=' . $row['data_doacao'] . '&ds_hemocentro=' . $row['ds_hemocentro'] . '&ds_observacao=' . $row['ds_observacao'] . '"class="button button-atualizar">Atualizar</a></td>';
-            echo '<td style="width: 10%"><a href="excluir.php?id_doacao=' . $row['id_doacao'] . '&data_doacao=' . $row['data_doacao'] . '&ds_hemocentro=' . $row['ds_hemocentro'] . '&ds_observacao=' . $row['ds_observacao'] . '"class="button button-excluir">Excluir</a></td>';
+            echo '<td style="width: 10%"><a href="excluirDoacao.php?id_doacao=' . $row['id_doacao'] . '&data_doacao=' . $row['data_doacao'] . '&ds_hemocentro=' . $row['ds_hemocentro'] . '&ds_observacao=' . $row['ds_observacao'] . '"class="button button-excluir">Excluir</a></td>';
             echo '</tr>';
           }
         }

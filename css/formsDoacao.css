@@ -52,6 +52,7 @@ textarea {
   cursor: pointer;
   font-size: 15px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
   <div class="navbar">
     <ul>
-      <li><a href="index.php" style="margin-left:40px">Home</a></li>
+      <li><a href="index.php">Home</a></li>
       <li><a href="requisitos.php">Requisitos de doação</a></li>
       <li><a href="processo.php">Processo de doação</a></li>
       <li><a href="hemocentros.php">Onde doar?</a></li>
@@ -21,11 +21,9 @@
 
   <div class="container">
     <!-- DADOS PESSOAIS --->
-    <div class="column">
+    <div class="column personal-info">
       <div class="personal-info-texto">
-        <div>
-          <h3>Dados pessoais</h3>
-        </div>
+        <h3>Dados pessoais</h3>
         <form>
           <?php
           session_start();
@@ -87,7 +85,7 @@
     </div>
 
     <!-- VERIFICACAO --->
-    <div class="column">
+    <div class="column verificar-section">
       <div class="formVerificar">
         <h3>Você está apto para doar?</h3>
         <form>
@@ -107,41 +105,41 @@
         </form>
         <div id="resultado"></div>
       </div>
-      <script>
-        function verificar() {
-          // Obtém os valores do formulário
-          var peso = parseFloat(document.getElementsByName("peso")[0].value);
-          var altura = parseFloat(document.getElementsByName("altura")[0].value);
-          var idade = parseInt(document.getElementsByName("idade")[0].value);
-
-          // Converte altura para metros (se estiver em centímetros)
-          if (altura > 3) {
-            altura /= 100; // Converte para metros
-          }
-
-          // Verifica se atende aos critérios para doação de sangue
-          if (idade >= 18 && idade <= 65 && peso >= 50 && altura >= 1.50) {
-            document.getElementById("resultado").innerHTML = "<h3>Você está apto para doar sangue!</h3>";
-          } else {
-            document.getElementById("resultado").innerHTML = "<h3>Você não atende aos critérios para doação de sangue.</h3>" +
-              "<p>Por favor, verifique os critérios <a href='requisitos.php'>aqui</a>!</p>";
-          }
-        }
-      </script>
     </div>
   </div>
 
+  <script>
+    function verificar() {
+      // Obtém os valores do formulário
+      var peso = parseFloat(document.getElementsByName("peso")[0].value);
+      var altura = parseFloat(document.getElementsByName("altura")[0].value);
+      var idade = parseInt(document.getElementsByName("idade")[0].value);
+
+      // Converte altura para metros (se estiver em centímetros)
+      if (altura > 3) {
+        altura /= 100; // Converte para metros
+      }
+
+      // Verifica se atende aos critérios para doação de sangue
+      if (idade >= 18 && idade <= 65 && peso >= 50 && altura >= 1.50) {
+        document.getElementById("resultado").innerHTML = "<h3>Você está apto para doar sangue!</h3>";
+      } else {
+        document.getElementById("resultado").innerHTML = "<h3>Você não atende aos critérios para doação de sangue.</h3>" +
+          "<p>Por favor, verifique os critérios <a href='requisitos.php'>aqui</a>!</p>";
+      }
+    }
+  </script>
+
   <!-- HISTORICO DE DOACOES --->
-  <section>
+  <section class="historico-section">
     <h3>Histórico de Doações</h3>
-    <table class="tabela-historico">
+    <table class="tabela-historico" style="width: 80%;">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Data</th>
           <th>Local</th>
           <th>Observações</th>
-          <th>Atualizar</th>
-          <th>Excluir</th>
         </tr>
       </thead>
       <tbody>
@@ -156,12 +154,12 @@
         if ($resultado != null) {
           while ($row = $resultado->fetch_assoc()) {
             echo '<tr>';
-            echo '<td>' . $row["id_doacao"] . "</td>";
-            echo '<td>' . $row["data_doacao"] . "</td>";
-            echo '<td>' . $row["ds_hemocentro"] . "</td>";
-            echo '<td>' . $row["ds_observacao"] . "</td>";
-            echo '<td><a href="atualizar.php?id_doacao='.$row['id_doacao'].'&data_doacao='.$row['data_doacao'].'&ds_hemocentro='.$row['ds_hemocentro'].'&ds_observacao='.$row['ds_observacao'].'">Atualizar</a></td>';
-            echo '<td><a href="excluir.php?id_doacao='.$row['id_doacao'].'&data_doacao='.$row['data_doacao'].'&ds_hemocentro='.$row['ds_hemocentro'].'&ds_observacao='.$row['ds_observacao'].'">Excluir</a></td>';
+            echo '<td style="width: 5%">' . $row["id_doacao"] . "</td>";
+            echo '<td style="width: 15%">' . $row["data_doacao"] . "</td>";
+            echo '<td style="width: 15%">' . $row["ds_hemocentro"] . "</td>";
+            echo '<td style="width: 30%">' . $row["ds_observacao"] . "</td>";
+            echo '<td style="width: 10%"><a href="atualizar.php?id_doacao=' . $row['id_doacao'] . '&data_doacao=' . $row['data_doacao'] . '&ds_hemocentro=' . $row['ds_hemocentro'] . '&ds_observacao=' . $row['ds_observacao'] . '"class="button button-atualizar">Atualizar</a></td>';
+            echo '<td style="width: 10%"><a href="excluir.php?id_doacao=' . $row['id_doacao'] . '&data_doacao=' . $row['data_doacao'] . '&ds_hemocentro=' . $row['ds_hemocentro'] . '&ds_observacao=' . $row['ds_observacao'] . '"class="button button-excluir">Excluir</a></td>';
             echo '</tr>';
           }
         }
@@ -169,7 +167,7 @@
         ?>
       </tbody>
     </table>
-    <a href="./cadastrarDoacao.php">Cadastrar nova doação</a>
+    <a href="./cadastrarDoacao.php" class="button button-cadastrar">Cadastrar nova doação</a>
   </section>
 </body>
 

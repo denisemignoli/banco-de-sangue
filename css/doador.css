@@ -7,39 +7,101 @@ body {
 }
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
-  height: 60vh;
+  padding: 20px;
 }
 
-img {
+.column {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.column h3 {
+  color: #960000;
+  margin-bottom: 20px;
+}
+
+.image-and-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  margin-right: 20px;
+}
+
+.image img {
   width: 100%;
+  max-width: 250px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 15px;
 }
 
-h2 {
-  color: #333;
-}
-
-p {
-  color: #666;
+.info {
+  flex: 1;
+  text-align: left;
 }
 
 .button {
   background-color: #960000;
   color: white;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #960000;
   border: 1px solid #960000;
+}
+
+.button-cadastrar {
+  background-color: #007bff;
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.button-atualizar {
+  background-color: #28a745;
+}
+
+.button-excluir {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.tabela-historico {
+  width: 100%;
+  margin-top: 15px;
+  line-height: 2;
+}
+
+.historico-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar {
@@ -84,11 +146,6 @@ p {
   margin-bottom: 20px;
 }
 
-.personal-info-texto h3 {
-  color: #960000;
-  margin-bottom: 20px;
-}
-
 .form-item {
   margin-bottom: 15px;
 }
@@ -106,78 +163,4 @@ p {
 
 .verificar-button {
   margin-top: 20px;
-}
-
-.personal-info-texto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-and-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-img {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 15px;
-}
-
-.column {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.column {
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 0 10px;
-}
-
-.tabela-historico {
-  width: 100%;
-}
-
-.image-and-info {
-  display: flex;
-  align-items: flex-start;
-}
-
-.image {
-  margin-right: 20px;
-}
-
-.image img {
-  width: 100%;
-  max-width: 250px;
-}
-
-.info {
-  flex: 1;
-  text-align: left;
-}
-
-.button {
-  background-color: #960000;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.info h3 {
-  margin-top: 0;
 }

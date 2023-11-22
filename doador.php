@@ -140,6 +140,8 @@
           <th>Data</th>
           <th>Local</th>
           <th>Observações</th>
+          <th>Atualizar</th>
+          <th>Excluir</th>
         </tr>
       </thead>
       <tbody>
@@ -154,9 +156,12 @@
         if ($resultado != null) {
           while ($row = $resultado->fetch_assoc()) {
             echo '<tr>';
+            echo '<td>' . $row["id_doacao"] . "</td>";
             echo '<td>' . $row["data_doacao"] . "</td>";
-            echo '<td>' . $row["local_doacao"] . "</td>";
-            echo '<td>' . $row["ds_observacoes"] . "</td>";
+            echo '<td>' . $row["ds_hemocentro"] . "</td>";
+            echo '<td>' . $row["ds_observacao"] . "</td>";
+            echo '<td><a href="atualizar.php?id_doacao='.$row['id_doacao'].'&data_doacao='.$row['data_doacao'].'&ds_hemocentro='.$row['ds_hemocentro'].'&ds_observacao='.$row['ds_observacao'].'">Atualizar</a></td>';
+            echo '<td><a href="excluir.php?id_doacao='.$row['id_doacao'].'&data_doacao='.$row['data_doacao'].'&ds_hemocentro='.$row['ds_hemocentro'].'&ds_observacao='.$row['ds_observacao'].'">Excluir</a></td>';
             echo '</tr>';
           }
         }
@@ -164,6 +169,7 @@
         ?>
       </tbody>
     </table>
+    <a href="./cadastrarDoacao.php">Cadastrar nova doação</a>
   </section>
 </body>
 

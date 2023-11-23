@@ -15,7 +15,7 @@
       <li><a href="index.php">Home</a></li>
       <li><a href="requisitos.php">Requisitos de doação</a></li>
       <li><a href="processo.php">Processo de doação</a></li>
-      <li><a href="hemocentros.php">Onde doar?</a></li>
+      <li><a href="onde_doar.php">Onde doar?</a></li>
     </ul>
   </div>
 
@@ -136,7 +136,6 @@
     <table class="tabela-historico" style="width: 80%;">
       <thead>
         <tr>
-          <th>ID</th>
           <th>Data</th>
           <th>Local</th>
           <th>Observações</th>
@@ -154,7 +153,7 @@
         if ($resultado != null) {
           while ($row = $resultado->fetch_assoc()) {
             echo '<tr>';
-            echo '<td style="width: 5%">' . $row["id_doacao"] . "</td>";
+            echo '<td class="hidden">' . $row["id_doacao"] . "</td>";
             echo '<td style="width: 15%">' . $row["data_doacao"] . "</td>";
             echo '<td style="width: 15%">' . $row["ds_hemocentro"] . "</td>";
             echo '<td style="width: 30%">' . $row["ds_observacao"] . "</td>";

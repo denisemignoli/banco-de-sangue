@@ -16,7 +16,7 @@
       <li><a href="index.php" style="margin-left:40px">Home</a></li>
       <li><a href="#">Requisitos de doação</a></li>
       <li><a href="processo.php">Processo de doação</a></li>
-      <li><a href="hemocentros.php">Onde doar?</a></li>
+      <li><a href="onde_doar.php">Onde doar?</a></li>
     </ul>
   </div>
 
